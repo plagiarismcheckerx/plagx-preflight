@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "optionSets": {
     "default": {},
     "limits": {
@@ -185,13 +185,24 @@
           "fleschReadingEase": 100
         },
         "errors": 0,
-        "warnings": 4,
+        "warnings": 5,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -448,13 +459,24 @@
           "fleschReadingEase": 79.8
         },
         "errors": 0,
-        "warnings": 9,
+        "warnings": 10,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -832,13 +854,24 @@
           "fleschReadingEase": 95.4
         },
         "errors": 0,
-        "warnings": 4,
+        "warnings": 5,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -1062,13 +1095,24 @@
           "fleschReadingEase": 85.4
         },
         "errors": 0,
-        "warnings": 6,
+        "warnings": 7,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -1413,13 +1457,24 @@
           "fleschReadingEase": 100.5
         },
         "errors": 0,
-        "warnings": 12,
+        "warnings": 13,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -1940,13 +1995,24 @@
           "fleschReadingEase": 80
         },
         "errors": 0,
-        "warnings": 8,
+        "warnings": 9,
         "infos": 1,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -2324,13 +2390,24 @@
           "fleschReadingEase": 92.9
         },
         "errors": 0,
-        "warnings": 7,
+        "warnings": 8,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -2642,13 +2719,24 @@
           "fleschReadingEase": 82.1
         },
         "errors": 0,
-        "warnings": 5,
+        "warnings": 6,
         "infos": 2,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -2927,13 +3015,24 @@
           "fleschReadingEase": 88
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 2,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -3124,13 +3223,24 @@
           "fleschReadingEase": 87
         },
         "errors": 0,
-        "warnings": 5,
+        "warnings": 6,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -3343,7 +3453,7 @@
           "fleschReadingEase": 50.2
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 1,
         "issues": [
           {
@@ -3361,6 +3471,17 @@
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -3518,13 +3639,24 @@
           "fleschReadingEase": 34.4
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 2,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -3884,13 +4016,24 @@
           "fleschReadingEase": 89.4
         },
         "errors": 1,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -4047,13 +4190,24 @@
           "fleschReadingEase": 90.3
         },
         "errors": 2,
-        "warnings": 3,
+        "warnings": 4,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -4321,13 +4475,24 @@
           "fleschReadingEase": 112.8
         },
         "errors": 0,
-        "warnings": 6,
+        "warnings": 7,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -4628,13 +4793,24 @@
           "fleschReadingEase": 88.6
         },
         "errors": 0,
-        "warnings": 6,
+        "warnings": 7,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -4846,13 +5022,24 @@
           "fleschReadingEase": 50.3
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -4953,13 +5140,24 @@
           "fleschReadingEase": 51.3
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -5060,13 +5258,24 @@
           "fleschReadingEase": 81.4
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -5202,13 +5411,24 @@
           "fleschReadingEase": 79.6
         },
         "errors": 0,
-        "warnings": 4,
+        "warnings": 5,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -5606,113 +5826,6 @@
           "fleschReadingEase": 0
         },
         "errors": 0,
-        "warnings": 2,
-        "infos": 0,
-        "issues": [
-          {
-            "level": "warning",
-            "code": "missing-heading",
-            "message": "Suggestion: add a \"Introduction\" heading.",
-            "start": 0,
-            "end": 0,
-            "line": 1,
-            "column": 1,
-            "text": "",
-            "suggestion": null
-          },
-          {
-            "level": "warning",
-            "code": "word-count-low",
-            "message": "Suggestion: the draft has 0 words; the minimum is 30.",
-            "start": 0,
-            "end": 0,
-            "line": 1,
-            "column": 1,
-            "text": "",
-            "suggestion": null
-          }
-        ]
-      }
-    },
-    {
-      "fixture": "25-empty.txt",
-      "options": "mla",
-      "result": {
-        "stats": {
-          "words": 0,
-          "sentences": 0,
-          "paragraphs": 0,
-          "characters": 0,
-          "readingTimeMinutes": 0,
-          "fleschReadingEase": 0
-        },
-        "errors": 0,
-        "warnings": 0,
-        "infos": 0,
-        "issues": []
-      }
-    },
-    {
-      "fixture": "25-empty.txt",
-      "options": "all",
-      "result": {
-        "stats": {
-          "words": 0,
-          "sentences": 0,
-          "paragraphs": 0,
-          "characters": 0,
-          "readingTimeMinutes": 0,
-          "fleschReadingEase": 0
-        },
-        "errors": 0,
-        "warnings": 0,
-        "infos": 0,
-        "issues": []
-      }
-    },
-    {
-      "fixture": "26-only-references.txt",
-      "options": "default",
-      "result": {
-        "stats": {
-          "words": 0,
-          "sentences": 0,
-          "paragraphs": 0,
-          "characters": 46,
-          "readingTimeMinutes": 0,
-          "fleschReadingEase": 0
-        },
-        "errors": 0,
-        "warnings": 1,
-        "infos": 0,
-        "issues": [
-          {
-            "level": "warning",
-            "code": "reference-not-cited",
-            "message": "Suggestion: this reference is never cited in the text.",
-            "start": 12,
-            "end": 45,
-            "line": 3,
-            "column": 1,
-            "text": "Smith, J. (2020). A title. Press.",
-            "suggestion": null
-          }
-        ]
-      }
-    },
-    {
-      "fixture": "26-only-references.txt",
-      "options": "limits",
-      "result": {
-        "stats": {
-          "words": 0,
-          "sentences": 0,
-          "paragraphs": 0,
-          "characters": 46,
-          "readingTimeMinutes": 0,
-          "fleschReadingEase": 0
-        },
-        "errors": 0,
         "warnings": 3,
         "infos": 0,
         "issues": [
@@ -5729,6 +5842,135 @@
           },
           {
             "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "word-count-low",
+            "message": "Suggestion: the draft has 0 words; the minimum is 30.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    {
+      "fixture": "25-empty.txt",
+      "options": "mla",
+      "result": {
+        "stats": {
+          "words": 0,
+          "sentences": 0,
+          "paragraphs": 0,
+          "characters": 0,
+          "readingTimeMinutes": 0,
+          "fleschReadingEase": 0
+        },
+        "errors": 0,
+        "warnings": 0,
+        "infos": 0,
+        "issues": []
+      }
+    },
+    {
+      "fixture": "25-empty.txt",
+      "options": "all",
+      "result": {
+        "stats": {
+          "words": 0,
+          "sentences": 0,
+          "paragraphs": 0,
+          "characters": 0,
+          "readingTimeMinutes": 0,
+          "fleschReadingEase": 0
+        },
+        "errors": 0,
+        "warnings": 0,
+        "infos": 0,
+        "issues": []
+      }
+    },
+    {
+      "fixture": "26-only-references.txt",
+      "options": "default",
+      "result": {
+        "stats": {
+          "words": 0,
+          "sentences": 0,
+          "paragraphs": 0,
+          "characters": 46,
+          "readingTimeMinutes": 0,
+          "fleschReadingEase": 0
+        },
+        "errors": 0,
+        "warnings": 1,
+        "infos": 0,
+        "issues": [
+          {
+            "level": "warning",
+            "code": "reference-not-cited",
+            "message": "Suggestion: this reference is never cited in the text.",
+            "start": 12,
+            "end": 45,
+            "line": 3,
+            "column": 1,
+            "text": "Smith, J. (2020). A title. Press.",
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    {
+      "fixture": "26-only-references.txt",
+      "options": "limits",
+      "result": {
+        "stats": {
+          "words": 0,
+          "sentences": 0,
+          "paragraphs": 0,
+          "characters": 46,
+          "readingTimeMinutes": 0,
+          "fleschReadingEase": 0
+        },
+        "errors": 0,
+        "warnings": 4,
+        "infos": 0,
+        "issues": [
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
             "code": "word-count-low",
             "message": "Suggestion: the draft has 0 words; the minimum is 30.",
             "start": 0,
@@ -5843,13 +6085,24 @@
           "fleschReadingEase": 114.9
         },
         "errors": 0,
-        "warnings": 1,
+        "warnings": 2,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -5927,13 +6180,24 @@
           "fleschReadingEase": 84
         },
         "errors": 0,
-        "warnings": 1,
+        "warnings": 2,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -6068,13 +6332,24 @@
           "fleschReadingEase": 107.1
         },
         "errors": 0,
-        "warnings": 3,
+        "warnings": 4,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -6198,13 +6473,24 @@
           "fleschReadingEase": 112.6
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -6349,13 +6635,24 @@
           "fleschReadingEase": 29.5
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -6479,13 +6776,24 @@
           "fleschReadingEase": 108.7
         },
         "errors": 0,
-        "warnings": 3,
+        "warnings": 4,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -6715,13 +7023,24 @@
           "fleschReadingEase": 71.8
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -6810,13 +7129,24 @@
           "fleschReadingEase": 31
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -6905,13 +7235,24 @@
           "fleschReadingEase": 60.7
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -7024,13 +7365,24 @@
           "fleschReadingEase": 106.7
         },
         "errors": 0,
-        "warnings": 3,
+        "warnings": 4,
         "infos": 0,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -7177,13 +7529,24 @@
           "fleschReadingEase": 77
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 2,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,
@@ -7352,13 +7715,24 @@
           "fleschReadingEase": 100.2
         },
         "errors": 0,
-        "warnings": 2,
+        "warnings": 3,
         "infos": 1,
         "issues": [
           {
             "level": "warning",
             "code": "missing-heading",
             "message": "Suggestion: add a \"Introduction\" heading.",
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "text": "",
+            "suggestion": null
+          },
+          {
+            "level": "warning",
+            "code": "missing-heading",
+            "message": "Suggestion: add a \"Conclusion\" heading.",
             "start": 0,
             "end": 0,
             "line": 1,

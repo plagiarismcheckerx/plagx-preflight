@@ -1,6 +1,6 @@
 {
   "name": "plagx-preflight",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Plagx Preflight: a free draft checker for essays and papers. Word count, citation and reference list checks, punctuation, basic grammar and readability suggestions. Runs offline. By Plagiarism Checker X.",
   "type": "module",
   "main": "./src/index.js",

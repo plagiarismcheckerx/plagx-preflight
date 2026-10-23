@@ -13,7 +13,7 @@ const issue = (text, code, options) => checkDraft(text, options).issues.find((i)
 // ------------------------------------------------------------ helpers
 
 test('VERSION and CHECKS are exported', () => {
-  assert.equal(VERSION, '0.1.1');
+  assert.equal(VERSION, '0.1.2');
   assert.deepEqual(CHECKS, ['length', 'references', 'punctuation', 'grammar', 'passive-voice']);
   assert.ok(!DEFAULT_CHECKS.includes('passive-voice'));
 });
@@ -230,6 +230,14 @@ test('missing-heading compares normalised headings', () => {
   const text = '# 1. Introduction\n\nText. More.\n\nIII. Conclusion:\n\nEnd. Done.';
   assert.ok(!has(text, 'missing-heading', { requiredHeadings: ['introduction', 'Conclusion'] }));
   assert.equal(issue(text, 'missing-heading', { requiredHeadings: ['Methods'] }).message, 'Suggestion: add a "Methods" heading.');
+});
+
+test('every missing heading is reported, in the given order', () => {
+  const r = checkDraft('Text here. More text.', { requiredHeadings: ['Introduction', 'Conclusion'] });
+  assert.deepEqual(r.issues.map((i) => i.message), [
+    'Suggestion: add a "Introduction" heading.',
+    'Suggestion: add a "Conclusion" heading.',
+  ]);
 });
 
 // ------------------------------------------------------------ references

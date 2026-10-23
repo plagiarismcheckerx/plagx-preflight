@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Fix: when several required headings are missing, each one is now reported (only the first was).
+
 ## 0.1.1
 
 - README: developer download links (npm, jsDelivr).

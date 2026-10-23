@@ -8,7 +8,7 @@ import * as checks from './checks.js';
 
 export { countWords, splitSentences, findCitations, STYLES };
 
-export const VERSION = '0.1.1';
+export const VERSION = '0.1.2';
 
 /** Check groups. 'passive-voice' is off by default. */
 export const CHECKS = ['length', 'references', 'punctuation', 'grammar', 'passive-voice'];
@@ -91,7 +91,7 @@ export function checkDraft(text, options = {}) {
   const issues = [];
   const add = (level, code, start, end, message, suggestion = null) => {
     if (MASKED.test(code) && masks.some(([a, b]) => start < b && end > a)) return;
-    const key = `${code}:${start}:${end}`;
+    const key = `${code}:${start}:${end}:${message}`;
     if (seen.has(key)) return;
     seen.add(key);
     const { line, column } = position(starts, start);
