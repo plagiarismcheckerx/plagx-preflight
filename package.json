@@ -1,0 +1,58 @@
+{
+  "name": "plagx-preflight",
+  "version": "0.1.0",
+  "description": "Plagx Preflight: a free draft checker for essays and papers. Word count, citation and reference list checks, punctuation, basic grammar and readability suggestions. Runs offline. By Plagiarism Checker X.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./index.d.ts",
+  "bin": {
+    "plagx-preflight": "./bin/plagx-preflight.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "bin",
+    "index.d.ts"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "docs": "node scripts/build-docs.js",
+    "parity": "node scripts/build-parity.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "draft-checker",
+    "essay-checker",
+    "grammar-checker",
+    "word-count",
+    "citation-checker",
+    "reference-list",
+    "apa",
+    "mla",
+    "readability",
+    "flesch",
+    "punctuation",
+    "academic-writing",
+    "students",
+    "offline"
+  ],
+  "author": "Plagiarism Checker X (https://plagiarismcheckerx.com/)",
+  "license": "MIT",
+  "homepage": "https://github.com/plagiarismcheckerx/plagx-preflight#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plagiarismcheckerx/plagx-preflight.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plagiarismcheckerx/plagx-preflight/issues"
+  }
+}

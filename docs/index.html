@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plagx Preflight: Free Draft Checker &amp; Grammar Suggestions</title>
+<meta name="description" content="Free draft checker for essays and papers. Check word count, citations and the reference list, punctuation, basic grammar and readability before you submit. Runs in your browser. By Plagiarism Checker X.">
+<style>
+  :root {
+    --bg: #f7f6f2; --surface: #ffffff; --text: #1d1f23; --muted: #5d6470;
+    --border: #dcd9d0; --accent: #1f5f8b; --accent-text: #ffffff; --warn-bg: #fff4d6; --warn: #7a5600;
+    --err-bg: #fbe3e1; --err: #9b2c22; --info-bg: #e3eef7; --info: #1f5f8b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171a; --surface: #1e2125; --text: #e8e6e1; --muted: #a2a8b2;
+      --border: #343840; --accent: #6fb0dc; --accent-text: #0d1a24; --warn-bg: #3a2f12; --warn: #f0cf7a;
+      --err-bg: #43211e; --err: #f2a59c; --info-bg: #1c3040; --info: #9cc9ea;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 Georgia, 'Times New Roman', serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  h2 { font: 600 1rem/1.3 system-ui, sans-serif; margin: 0 0 12px; }
+  h3 { font: 600 0.9rem/1.3 system-ui, sans-serif; margin: 16px 0 6px; color: var(--muted); text-transform: capitalize; }
+  .lead { color: var(--muted); margin: 0 0 10px; }
+  .downloads { color: var(--muted); margin: 0 0 24px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+  label, button, select, input, textarea, .small { font-family: system-ui, sans-serif; font-size: 0.9rem; }
+  .row { display: flex; gap: 8px 14px; flex-wrap: wrap; align-items: center; }
+  input, select, textarea { background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; }
+  input[type=number] { width: 7em; }
+  input[type=checkbox] { padding: 0; }
+  textarea { width: 100%; min-height: 220px; font: 15px/1.5 Georgia, serif; }
+  button { background: var(--accent); color: var(--accent-text); border: 0; border-radius: 6px; padding: 8px 14px; cursor: pointer; }
+  button.ghost { background: transparent; color: var(--accent); border: 1px solid var(--border); }
+  .note { background: var(--warn-bg); color: var(--warn); border-radius: 6px; padding: 10px 12px; margin: 12px 0 0; font-family: system-ui, sans-serif; font-size: 0.9rem; }
+  .privacy { color: var(--muted); margin: 8px 0 0; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin-bottom: 16px; }
+  .stat { border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; }
+  .stat b { display: block; font: 600 1.25rem system-ui, sans-serif; }
+  .stat span { color: var(--muted); font: 0.8rem system-ui, sans-serif; }
+  .doc { white-space: pre-wrap; overflow-wrap: anywhere; border: 1px solid var(--border); border-radius: 8px; padding: 14px; background: var(--bg); max-height: 480px; overflow: auto; }
+  mark { background: var(--info-bg); color: inherit; border-bottom: 2px solid var(--info); cursor: help; border-radius: 2px; }
+  mark.warning { background: var(--warn-bg); border-bottom-color: var(--warn); }
+  mark.error { background: var(--err-bg); border-bottom-color: var(--err); }
+  mark.flash { outline: 2px solid var(--accent); }
+  .badge { display: inline-block; font: 600 0.72rem system-ui, sans-serif; padding: 1px 6px; border-radius: 4px; margin-right: 6px; background: var(--info-bg); color: var(--info); }
+  .badge.warning { background: var(--warn-bg); color: var(--warn); }
+  .badge.error { background: var(--err-bg); color: var(--err); }
+  ul.issues { list-style: none; padding: 0; margin: 0; }
+  ul.issues li { padding: 6px 0; border-top: 1px solid var(--border); font: 0.9rem system-ui, sans-serif; cursor: pointer; }
+  ul.issues li:hover { color: var(--accent); }
+  ul.issues code { color: var(--muted); font-size: 0.8rem; }
+  .summary { color: var(--muted); margin: 0 0 12px; }
+  table { width: 100%; border-collapse: collapse; font: 0.9rem system-ui, sans-serif; }
+  th, td { text-align: left; padding: 6px 8px; border-top: 1px solid var(--border); vertical-align: top; overflow-wrap: anywhere; }
+  .next p { margin: 0 0 14px; }
+  a.button { display: inline-block; background: var(--accent); color: var(--accent-text); border-radius: 6px; padding: 9px 16px; text-decoration: none; font: 0.9rem system-ui, sans-serif; }
+  footer { color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); padding-top: 16px; }
+  a { color: var(--accent); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Plagx Preflight</h1>
+  <p class="lead">A free draft checker for essays, reports and research papers. Paste your draft and Plagx Preflight checks the word count, structure, in-text citations against your reference list, punctuation and basic grammar, then gives readability stats, so you can fix the small things before you submit.</p>
+  <p class="downloads small">Developer downloads: <a href="https://github.com/plagiarismcheckerx/plagx-preflight">GitHub</a> · <a href="https://www.npmjs.com/package/plagx-preflight">npm</a> · <a href="https://pypi.org/project/plagx-preflight/">PyPI</a> · <a href="https://www.nuget.org/packages/Plagx.Preflight">NuGet</a> · <a href="https://packagist.org/packages/plagiarismcheckerx/plagx-preflight">Packagist</a></p>
+
+  <section class="card">
+    <h2>Your draft</h2>
+    <textarea id="text" aria-label="Draft text"></textarea>
+    <div class="row" style="margin-top:10px">
+      <label>Upload <input type="file" id="file" accept=".txt,.md,text/plain,text/markdown"></label>
+    </div>
+    <div class="row" style="margin-top:10px">
+      <label>Min words <input type="number" id="min" min="0" inputmode="numeric"></label>
+      <label>Max words <input type="number" id="max" min="0" inputmode="numeric"></label>
+      <label>Style <select id="style"><option value="apa">APA</option><option value="mla">MLA</option></select></label>
+    </div>
+    <div class="row" style="margin-top:10px" id="checks">
+      <label><input type="checkbox" value="length" checked> Length &amp; structure</label>
+      <label><input type="checkbox" value="references" checked> References</label>
+      <label><input type="checkbox" value="punctuation" checked> Punctuation</label>
+      <label><input type="checkbox" value="grammar" checked> Grammar</label>
+      <label><input type="checkbox" value="passive-voice"> Passive voice</label>
+    </div>
+    <div class="row" style="margin-top:14px">
+      <button id="run">Check draft</button>
+      <button class="ghost" id="clear">Clear</button>
+    </div>
+    <p class="privacy small">Everything runs in your browser. Your text never leaves this page.</p>
+  </section>
+
+  <section class="card" id="results">
+    <h2>Results</h2>
+    <div class="stats" id="stats"></div>
+    <p class="summary small" id="summary"></p>
+    <div class="doc" id="doc"></div>
+    <p class="note">Automated suggestions only. Preflight checks structure, references, punctuation and basic grammar. Originality and AI-generated text are checked in Plagiarism Checker X.</p>
+  </section>
+
+  <section class="card">
+    <h2>Suggestions</h2>
+    <div id="groups"></div>
+  </section>
+
+  <section class="card" id="cites-card">
+    <h2>Citations and reference list</h2>
+    <div id="cites"></div>
+  </section>
+
+  <section class="card next">
+    <h2>Draft ready? Check the whole paper before you submit</h2>
+    <p>Preflight looks at form: length, citations, punctuation and grammar. Plagiarism Checker X scans your full document for originality and AI-generated text.</p>
+    <a class="button" href="https://plagiarismcheckerx.com/?utm_source=plagx-preflight&amp;utm_medium=demo&amp;utm_campaign=plagx&amp;utm_content=next-step">Check my paper with Plagiarism Checker X</a>
+  </section>
+
+  <footer>
+    <p>Plagx Preflight is a free academic writing utility by Plagiarism Checker X. For originality checks and AI-generated text detection, visit <strong> Plagiarism Checker X </strong> and its <a href="https://plagiarismcheckerx.com/ai-content-detector?utm_source=plagx-preflight&amp;utm_medium=demo&amp;utm_campaign=plagx&amp;utm_content=footer-ai-detector">AI Content Detector</a>.</p>
+    <p><a href="https://github.com/plagiarismcheckerx/plagx-preflight">Source code on GitHub</a> · MIT License</p>
+  </footer>
+</main>
+
+<script type="module">
+  import { checkDraft, findCitations } from './lib/index.js';
+  import { structure } from './lib/text.js';
+  import { parseEntry, citationMatches } from './lib/citations.js';
+
+  const $ = (id) => document.getElementById(id);
+  const SAMPLE = `# Introduction
+
+Social media has changed how students learn and communicate. Research shows that the the effect is large (Smith, 2020). this is a important point , and its been studied by Jones et al (2019).
+
+i think teachers should of noticed this sooner,because the data is more clear than before!! Its a common pattern.
+
+## Conclusion
+
+The evidence suggests careful use helps. More research is needed (Brown, 2018).
+
+## References
+
+Smith, J. (2020). Learning online. Journal of Tests, 4(2), 1-10.
+Taylor, R. (2017). An unused source. Academic Press.
+`;
+  const GROUPS = {
+    length: ['word-count-low', 'word-count-high', 'long-sentence', 'long-paragraph', 'single-sentence-paragraph', 'missing-heading'],
+    references: ['citation-no-reference', 'reference-not-cited', 'missing-reference-section', 'et-al-format'],
+    punctuation: ['unmatched-quote', 'unmatched-bracket', 'double-space', 'space-before-punctuation', 'missing-space-after-punctuation', 'repeated-punctuation', 'mixed-quote-styles'],
+    grammar: ['repeated-word', 'a-an', 'sentence-capital', 'lowercase-i', 'common-confusion', 'passive-voice'],
+  };
+  const groupOf = (code) => Object.keys(GROUPS).find((g) => GROUPS[g].includes(code));
+  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  const RANK = { info: 0, warning: 1, error: 2 };
+
+  function highlight(text, issues) {
+    const spans = issues.filter((i) => i.end > i.start);
+    const cuts = new Set([0, text.length]);
+    for (const i of spans) { cuts.add(i.start); cuts.add(i.end); }
+    const points = [...cuts].sort((a, b) => a - b);
+    let html = '';
+    for (let k = 0; k < points.length - 1; k += 1) {
+      const a = points[k];
+      const b = points[k + 1];
+      const seg = esc(text.slice(a, b));
+      const cover = spans.filter((i) => i.start <= a && i.end >= b);
+      if (!cover.length) { html += seg; continue; }
+      const level = cover.reduce((m, i) => (RANK[i.level] > RANK[m] ? i.level : m), 'info');
+      const title = esc(cover.map((i) => i.message).join('\n'));
+      const ids = cover.map((i) => i.idx).join(' ');
+      html += `<mark class="${level}" title="${title}" data-ids="${ids}" tabindex="0">${seg}</mark>`;
+    }
+    return html;
+  }
+
+  function scrollTo(idx) {
+    const marks = [...document.querySelectorAll('mark')].filter((m) => m.dataset.ids.split(' ').includes(String(idx)));
+    if (!marks.length) return;
+    marks[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    marks.forEach((m) => { m.classList.add('flash'); setTimeout(() => m.classList.remove('flash'), 1500); });
+  }
+
+  function citationTable(text, style) {
+    const doc = structure(text);
+    const cites = findCitations(text.slice(0, doc.bodyEnd), style);
+    const entries = doc.entries.map((e) => ({ ...e, ...parseEntry(e.text) }));
+    const missing = doc.referenceHeading ? cites.filter((c) => !entries.some((e) => citationMatches(c, e))) : cites;
+    const unused = entries.filter((e) => !cites.some((c) => citationMatches(c, e)));
+    if (!cites.length && !entries.length) return '<p class="small">No citations or reference list found.</p>';
+    const rows = (list) => (list.length ? list.map((x) => `<li>${esc(x.text)}</li>`).join('') : '<li>None</li>');
+    return `<table><tr><th>Cited but missing from the list (${missing.length})</th><th>Listed but never cited (${unused.length})</th></tr>
+      <tr><td><ul>${rows(missing)}</ul></td><td><ul>${rows(unused)}</ul></td></tr></table>
+      <p class="small">${cites.length} citation(s) found, ${entries.length} reference entr${entries.length === 1 ? 'y' : 'ies'}.</p>`;
+  }
+
+  function run() {
+    const text = $('text').value;
+    const checks = [...$('checks').querySelectorAll('input:checked')].map((c) => c.value);
+    const num = (id) => ($(id).value === '' ? undefined : Math.max(0, Math.floor(Number($(id).value))));
+    const style = $('style').value;
+    const r = checkDraft(text, { minWords: num('min'), maxWords: num('max'), style, checks });
+    r.issues.forEach((i, idx) => { i.idx = idx; });
+
+    const s = r.stats;
+    const stat = (v, l) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`;
+    $('stats').innerHTML = stat(s.words, 'words') + stat(s.sentences, 'sentences') + stat(s.paragraphs, 'paragraphs')
+      + stat(s.characters, 'characters') + stat(`${s.readingTimeMinutes} min`, 'reading time') + stat(s.fleschReadingEase, 'Flesch reading ease');
+    $('summary').textContent = `${r.errors} error(s), ${r.warnings} warning(s), ${r.infos} info. Hover or tap a highlight to see the suggestion.`;
+    $('doc').innerHTML = highlight(text, r.issues) || '<span class="small">Paste a draft above.</span>';
+
+    let html = '';
+    for (const g of Object.keys(GROUPS)) {
+      const list = r.issues.filter((i) => groupOf(i.code) === g);
+      if (!list.length) continue;
+      html += `<h3>${g} (${list.length})</h3><ul class="issues">${list.map((i) => `<li data-idx="${i.idx}"><span class="badge ${i.level}">${i.level}</span>${esc(i.message)} ${i.end > i.start ? `<code>line ${i.line}</code>` : ''}</li>`).join('')}</ul>`;
+    }
+    $('groups').innerHTML = html || '<p class="small">No suggestions. Nice work.</p>';
+    $('cites').innerHTML = checks.includes('references') ? citationTable(text, style) : '<p class="small">Turn on References to see the citation table.</p>';
+  }
+
+  $('groups').addEventListener('click', (e) => {
+    const li = e.target.closest('li[data-idx]');
+    if (li) scrollTo(li.dataset.idx);
+  });
+  $('doc').addEventListener('click', (e) => {
+    const m = e.target.closest('mark');
+    if (m && matchMedia('(hover: none)').matches) alert(m.title);
+  });
+  $('run').addEventListener('click', run);
+  $('clear').addEventListener('click', () => { $('text').value = ''; run(); });
+  $('file').addEventListener('change', async (e) => {
+    const f = e.target.files[0];
+    if (!f) return;
+    $('text').value = (await f.text()).replace(/^﻿/, '');
+    run();
+  });
+
+  $('text').value = SAMPLE;
+  run();
+</script>
+</body>
+</html>

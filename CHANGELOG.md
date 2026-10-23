@@ -1,0 +1,7 @@
+# Changelog
+
+## 0.1.0
+
+- First release: `checkDraft()` with length and structure, references and citations (APA, MLA), punctuation, basic grammar and readability stats.
+- Command line: `plagx-preflight check` and `plagx-preflight stats`.
+- Parity fixtures (`parity/expected.json`) for the ports in other languages.
