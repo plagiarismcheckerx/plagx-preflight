@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- README: developer download links (npm, jsDelivr).
+- First release published from GitHub Actions with npm provenance.
+
 ## 0.1.0
 
 - First release: `checkDraft()` with length and structure, references and citations (APA, MLA), punctuation, basic grammar and readability stats.

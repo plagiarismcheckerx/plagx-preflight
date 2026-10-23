@@ -8,7 +8,7 @@ import * as checks from './checks.js';
 
 export { countWords, splitSentences, findCitations, STYLES };
 
-export const VERSION = '0.1.0';
+export const VERSION = '0.1.1';
 
 /** Check groups. 'passive-voice' is off by default. */
 export const CHECKS = ['length', 'references', 'punctuation', 'grammar', 'passive-voice'];

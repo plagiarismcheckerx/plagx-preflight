@@ -13,7 +13,7 @@ const issue = (text, code, options) => checkDraft(text, options).issues.find((i)
 // ------------------------------------------------------------ helpers
 
 test('VERSION and CHECKS are exported', () => {
-  assert.equal(VERSION, '0.1.0');
+  assert.equal(VERSION, '0.1.1');
   assert.deepEqual(CHECKS, ['length', 'references', 'punctuation', 'grammar', 'passive-voice']);
   assert.ok(!DEFAULT_CHECKS.includes('passive-voice'));
 });

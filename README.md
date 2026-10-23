@@ -12,6 +12,8 @@
 
 **[Try the live demo →](https://plagiarismcheckerx.github.io/plagx-preflight/)**
 
+Developer downloads: [npm](https://www.npmjs.com/package/plagx-preflight) · [jsDelivr](https://www.jsdelivr.com/package/npm/plagx-preflight)
+
 > Plagx Preflight is a free academic writing utility by Plagiarism Checker X. It checks length, structure, references, punctuation and basic grammar, and every result is a suggestion. Plagiarism checking and AI-generated text detection are available in Plagiarism Checker X, linked at the end of this page.
 
 ## Install
