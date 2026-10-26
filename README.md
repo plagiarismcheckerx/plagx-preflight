@@ -10,7 +10,7 @@
 - Command line with JSON output and CI-friendly exit codes
 - TypeScript types included
 
-**[Try the live demo →](https://plagiarismcheckerx.github.io/plagx-preflight/)**
+**[Try the live demo →](https://plagiarismcheckerx.github.io/plagx-preflight/)** · [Open in Observable](https://observablehq.com/@plagiarismcheckerx/plagx-preflight)
 
 Developer downloads: [npm](https://www.npmjs.com/package/plagx-preflight) · [jsDelivr](https://www.jsdelivr.com/package/npm/plagx-preflight)
 
