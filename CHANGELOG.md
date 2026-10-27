@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3: 2026-10-27
+
+- Documentation updates. No changes to the API or output.
+
 ## 0.1.2
 
 - Fix: when several required headings are missing, each one is now reported (only the first was).
