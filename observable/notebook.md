@@ -116,11 +116,11 @@ import {checkDraft} from "https://cdn.jsdelivr.net/npm/plagx-preflight@0.1.2/+es
 
 Developer downloads: [npm](https://www.npmjs.com/package/plagx-preflight) · [jsDelivr](https://www.jsdelivr.com/package/npm/plagx-preflight) · [GitHub](https://github.com/plagiarismcheckerx/plagx-preflight)
 
-Need a quick citation online? Use the [free citation generator](https://plagiarismcheckerx.com/citation-generator?utm_source=plagx-preflight-observable&utm_medium=notebook&utm_campaign=plagx&utm_content=citation-generator).
+Need a quick citation online? Use the [free citation generator](https://plagiarismcheckerx.com/citation-generator?utm_source=plagx-preflight-observable).
 
 ## Plagx Preflight - Free Draft & Grammar Checker
 
-Developed by Plagiarism Checker X. Plagx Preflight gives writing suggestions; it does not detect plagiarism or AI-generated text. For full document checks, explore [Plagiarism Checker X](https://plagiarismcheckerx.com/?utm_source=plagx-preflight-observable&utm_medium=notebook&utm_campaign=plagx&utm_content=about-cta) and its [AI Content Detector](https://plagiarismcheckerx.com/ai-content-detector?utm_source=plagx-preflight-observable&utm_medium=notebook&utm_campaign=plagx&utm_content=about-ai-detector).
+Developed by Plagiarism Checker X. Plagx Preflight gives writing suggestions; it does not detect plagiarism or AI-generated text. For full document checks, explore [Plagiarism Checker X](https://plagiarismcheckerx.com/?utm_source=plagx-preflight-observable) and its [AI Content Detector](https://plagiarismcheckerx.com/ai-content-detector?utm_source=plagx-preflight-observable).
 
 MIT License
 ```

@@ -18,6 +18,6 @@ Exit codes: `0` no errors, `1` errors found (`--strict` counts warnings too), `2
 
 Source and full documentation: [github.com/plagiarismcheckerx/plagx-preflight](https://github.com/plagiarismcheckerx/plagx-preflight)
 
-Plagx Preflight gives writing suggestions; it does not detect plagiarism or AI-generated text. For full document checks, explore [Plagiarism Checker X](https://plagiarismcheckerx.com/?utm_source=plagx-preflight-docker&utm_medium=readme&utm_campaign=plagx&utm_content=about-cta) and its [AI Content Detector](https://plagiarismcheckerx.com/ai-content-detector?utm_source=plagx-preflight-docker&utm_medium=readme&utm_campaign=plagx&utm_content=about-ai-detector).
+Plagx Preflight gives writing suggestions; it does not detect plagiarism or AI-generated text. For full document checks, explore [Plagiarism Checker X](https://plagiarismcheckerx.com/?utm_source=plagx-preflight-docker) and its [AI Content Detector](https://plagiarismcheckerx.com/ai-content-detector?utm_source=plagx-preflight-docker).
 
 MIT © Plagiarism Checker X
