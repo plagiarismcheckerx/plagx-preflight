@@ -14,6 +14,8 @@
 
 Developer downloads: [npm](https://www.npmjs.com/package/plagx-preflight) · [jsDelivr](https://www.jsdelivr.com/package/npm/plagx-preflight)
 
+Use it from AI assistants such as Claude, ChatGPT and Cursor with the [Plagx Cite + Preflight MCP server](https://github.com/plagiarismcheckerx/plagx-mcp): `npx -y plagx-mcp`.
+
 > Plagx Preflight is a free academic writing utility by Plagiarism Checker X. It checks length, structure, references, punctuation and basic grammar, and every result is a suggestion. Plagiarism checking and AI-generated text detection are available in Plagiarism Checker X, linked at the end of this page.
 
 ## Install
